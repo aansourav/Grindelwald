@@ -23,6 +23,7 @@
                 <div class="grid h-screen grid-cols-[360px_1060px] gap-4">
                     <div class="mt-20 ml-20">
                         <div class="relative">
+                            <!-- ----------------- Profile Section ----------------- -->
                             <div class="w-[72px] h-[72px] relative">
                                 <div
                                     class="w-[72px] h-[72px] rounded-[13px] overflow-hidden bg-green-500 relative"
@@ -54,6 +55,8 @@
                             >
                                 samantha@email.com
                             </p>
+
+                            <!---------------- Sidebar Navigation Menu ---------------->
                             <div>
                                 <nav>
                                     <ul
@@ -98,6 +101,7 @@
                         <div
                             class="bg-white rounded-l-[30px] pt-[60px] px-[100px] pb-[59px]"
                         >
+                            <!-- ----------------- Expenses ----------------- -->
                             <div class="flex justify-between">
                                 <div>
                                     <h3
@@ -145,7 +149,9 @@
                                             alt="two"
                                         />
                                     </div>
-                                    <div class="ml-2">
+                                    <div
+                                        class="ml-2 hover:cursor-pointer hover:scale-[1.03] transition-all duration-300"
+                                    >
                                         <svg
                                             width="28"
                                             height="28"
@@ -181,6 +187,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- ----------------- Stats Graph ----------------- -->
                             <div class="flex gap-[6px] items-end mt-[46px]">
                                 <div
                                     class="w-4 h-[35px] bg-stats_bg hover:bg-stats_solid_bg"
@@ -252,12 +260,14 @@
                                     class="w-4 h-[44px] bg-stats_bg hover:bg-stats_solid_bg"
                                 ></div>
                             </div>
+
+                            <!-- ----------------- Today Section ----------------- -->
                             <div>
                                 <div
                                     class="flex justify-between items-center mt-[47px]"
                                 >
                                     <div
-                                        class="font-avenir_regular font-normal text-[18px] text-secondary_color"
+                                        class="font-avenir_regular font-bold text-[18px] text-secondary_color"
                                     >
                                         Today
                                     </div>
@@ -383,14 +393,16 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-------------------- Monday Section ------------------>
                             <div class="">
                                 <div
                                     class="flex justify-between items-center mt-[47px]"
                                 >
                                     <div
-                                        class="font-avenir_regular font-normal text-[18px] text-secondary_color"
+                                        class="font-avenir_regular font-bold text-[18px] text-secondary_color"
                                     >
-                                        Today
+                                        Monday, 23 March 2020
                                     </div>
                                     <div class="flex gap-[5px]">
                                         <div
@@ -481,15 +493,18 @@
                                 </div>
                             </div>
                         </div>
+
                         <div
                             class="bg-secondary_bg rounded-r-[30px] pt-[76px] pb-[60px] px-[50px]"
                         >
                             <div>
                                 <h4
-                                    class="font-avenir_regular font-normal text-xl leading-[30px] tracking-[0.33px] text-secondary_color"
+                                    class="font-avenir_regular font-bold text-xl leading-[30px] tracking-[0.33px] text-secondary_color"
                                 >
                                     Where your money go?
                                 </h4>
+
+                                <!------------------- Money Expense Section ----------------->
                                 <div class="mt-[30px]">
                                     <div class="flex flex-col gap-[30px]">
                                         <div
@@ -629,12 +644,14 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- ----------------- Save Money Section ----------------- -->
                                 <div
-                                    class="bg-[#EDF0F6] w-[250px] h-[258px] px-[25px] rounded-[15px] mt-[101px]"
+                                    class="bg-[#EDF0F6] w-[250px] h-[258px] px-[25px] rounded-[15px] mt-[101px] group"
                                 >
                                     <div class="relative">
                                         <div
-                                            class="absolute -top-[15px] left-0"
+                                            class="absolute -top-[15px] left-0 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-[1.04] group-hover:rotate-[10deg]"
                                         >
                                             <img
                                                 src="./images/boxes.png"
@@ -642,7 +659,7 @@
                                             />
                                         </div>
                                         <div
-                                            class="absolute -top-[34px] right-[.85px]"
+                                            class="absolute -top-[34px] right-[.85px] transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-[1.04] group-hover:rotate-[-15deg]"
                                         >
                                             <img
                                                 src="./images/flowerpot.png"
@@ -676,6 +693,8 @@
                 </div>
             </div>
         </div>
+
+        <!--------------- TailwindCSS Config Script -------------->
         <script>
             tailwind.config = {
                 theme: {

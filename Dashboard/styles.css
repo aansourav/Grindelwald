@@ -2,81 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-/* root css */
 body {
-  background-color: #101010;
+    background-color: #101010;
 }
 :root {
-  --primary-bg: #101010;
-  --secondary-bg: #f9fafc;
-  --stats-bg: rgba(21, 122, 255, 0.2);
-  --stats-solid-bg: #157aff;
-  --cart-bg: #32a7e2;
-  --train-bg: #b548c6;
-  --housing-bg: #ff8700;
-  --food-bg: #dc3434;
-  --entertainment-bg: #4ba83d;
-  --bars-bg: #31ba96;
-  --bars-border-color: #eceff5;
-  --common-bg: #ffffff;
-  --primary-color: #273240;
-  --secondary-color: #262a41;
-  --common-text-color: #101010;
-  --nav-text-color: "rgba(255,255,255,0.5)";
-  --white: #fff;
-  --black: #000;
+    --primary-bg: #101010;
+    --secondary-bg: #f9fafc;
+    --stats-bg: rgba(21, 122, 255, 0.2);
+    --stats-solid-bg: #157aff;
+    --cart-bg: #32a7e2;
+    --train-bg: #b548c6;
+    --housing-bg: #ff8700;
+    --food-bg: #dc3434;
+    --entertainment-bg: #4ba83d;
+    --bars-bg: #31ba96;
+    --bars-border-color: #eceff5;
+    --common-bg: #ffffff;
+    --primary-color: #273240;
+    --secondary-color: #262a41;
+    --common-text-color: #101010;
+    --nav-text-color: "rgba(255,255,255,0.5)";
+    --white: #fff;
+    --black: #000;
 }
 
 /* Poppins */
 
 @font-face {
-  font-family: "poppins-semibold";
-  src: url(./assets/fonts/poppins/Poppins-SemiBold.ttf);
+    font-family: "poppins-semibold";
+    src: url(./assets/fonts/poppins/Poppins-SemiBold.ttf);
 }
 @font-face {
-  font-family: "poppins-regular";
-  src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
+    font-family: "poppins-regular";
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
 }
 @font-face {
-  font-family: "poppins-bold";
-  src: url(./assets/fonts/poppins/Poppins-Bold.ttf);
+    font-family: "poppins-bold";
+    src: url(./assets/fonts/poppins/Poppins-Bold.ttf);
 }
 @font-face {
-  font-family: "poppins-medium";
-  src: url(./assets/fonts/poppins/Poppins-Medium.ttf);
+    font-family: "poppins-medium";
+    src: url(./assets/fonts/poppins/Poppins-Medium.ttf);
 }
 
 /* Avenir Next LT Pro */
 
 @font-face {
-  font-family: "Avenir Next LT Pro Regular";
-  src: url(./assets/fonts/avenir/AvenirNextLTPro-Regular.otf);
+    font-family: "Avenir Next LT Pro Regular";
+    src: url(./assets/fonts/avenir/AvenirNextLTPro-Regular.otf);
 }
 
 @font-face {
-  font-family: "Avenir Next LT Pro Italic";
-  src: url(./assets/fonts/avenir/AvenirNextLTPro-It.otf);
+    font-family: "Avenir Next LT Pro Italic";
+    src: url(./assets/fonts/avenir/AvenirNextLTPro-It.otf);
 }
 
 @font-face {
-  font-family: "Avenir Next LT Pro Bold";
-  src: url(./assets/fonts/avenir/AvenirNextLTPro-Bold.otf);
+    font-family: "Avenir Next LT Pro Bold";
+    src: url(./assets/fonts/avenir/AvenirNextLTPro-Bold.otf);
 }
 
 .myanimation {
-  animation: widthincrease 2s reverse;
+    animation: widthincrease 2s reverse;
 }
 
 @keyframes widthincrease {
-  to {
-    width: 0%;
-  }
-  from {
-    width: 100%;
-  }
+    to {
+        width: 0%;
+    }
+    from {
+        width: 100%;
+    }
 }
 
-
-.color-blue{
-  color: #157aff!important;
+.color-blue {
+    color: #157aff !important;
 }

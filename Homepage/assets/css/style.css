@@ -1,0 +1,896 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: var(--light-green);
+    color: var(--dark-green);
+}
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pad {
+    padding: 50px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+input:active,
+input:focus,
+input:focus-visible {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+button:active,
+button:focus,
+button:focus-visible {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+button {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+@import url("https://fonts.cdnfonts.com/css/switzer?styles=135298,135301,135291,135294,135296,135299,135287,135289,135285");
+
+@font-face {
+    font-family: "AvenirBold";
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+
+@font-face {
+    font-family: "AvenirRegular";
+    src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "BoskaVariable";
+    src: url(../fonts/Boska-Variable.ttf);
+}
+
+@font-face {
+    font-family: "BoskaVariableItalic";
+    src: url(../fonts/Boska-VariableItalic.ttf);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+:root {
+    --light-green: #75ff69;
+    --dark-green: #1b3936;
+}
+
+html {
+    background-color: var(--dark-green);
+}
+
+/************************** HERO SECTION ***************************/
+body {
+    background-image: url(../images/grain.png);
+}
+
+#hero {
+    background: url(../images/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    position: relative;
+}
+
+#hero::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/Line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    z-index: -1;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0;
+    z-index: 456;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    font-family: "Switzer", sans-serif;
+    color: #fff;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo span {
+    font-size: 40px;
+    font-family: "Oranienbaum", serif;
+    color: var(--light-green);
+    transform: scale(1, 1.5);
+}
+
+.logo img {
+    width: 10%;
+}
+
+.hero-text {
+    padding: 60px 0 130px 0;
+    position: relative;
+}
+
+.hero-text .one {
+    line-height: 100%;
+}
+
+.hero-text p {
+    text-align: center;
+    color: #e4e4e4;
+    font-family: "Switzer", sans-serif;
+    font-size: 20px;
+    width: 46%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.hero-text .two {
+    margin-left: 370px;
+    font-style: italic !important;
+    font-family: "BoskaVariableItalic";
+    color: var(--light-green);
+    line-height: 70%;
+}
+
+.hero-text h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-family: "BoskaVariable", serif;
+    font-size: 200px;
+    text-transform: capitalize;
+}
+
+.hero-text .three {
+    line-height: 50%;
+}
+
+.hero-text h4 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-family: "BoskaVariable", serif;
+}
+
+.hero-text button {
+    position: absolute;
+    border: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 50px;
+    top: 40%;
+    right: 7%;
+    color: var(--light-green);
+    -webkit-animation: scale-up-center 2s ease-out infinite alternate both;
+    animation: scale-up-center 2s ease-out infinite alternate both;
+    box-shadow: 0px 0px 0px 5px #ffffff5c;
+    cursor: pointer;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/******************************* WOODS INFO SECTION ******************************/
+#info {
+    background: #fff;
+    padding: 100px 0;
+    margin-top: -30px;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+}
+
+.info-box img {
+    width: 30%;
+}
+
+.info-box p {
+    font-family: "Switzer", sans-serif;
+    font-size: 1.3rem;
+    color: var(--dark-green);
+    margin-top: 25px;
+}
+
+.info-box .info-left {
+    width: 90%;
+}
+
+.info-box .info-right {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-box .info-right h5 {
+    font-family: "Switzer", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.info-box .info-right h4 {
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: var(--dark-green);
+    line-height: 100%;
+}
+
+.info-box .info-right span {
+    font-family: "Switzer", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+/****************************** ABOUT US SECTION ******************************/
+#about {
+    padding: 50px 0 0 0;
+    position: relative;
+    margin-bottom: -15px;
+}
+
+.about-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    row-gap: 200px;
+    justify-items: center;
+    margin: 150px auto;
+}
+
+.about-box img {
+    width: 60%;
+}
+
+.about-text {
+    width: 50%;
+    padding: 200px 0;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(27, 57, 54);
+    background: radial-gradient(
+        circle,
+        rgba(27, 57, 54, 1) 22%,
+        rgba(222, 244, 222, 0) 67%
+    );
+}
+
+.about-text h3 {
+    color: #75ff69;
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.about-text p {
+    color: #ececec;
+    font-weight: normal;
+    font-family: "BoskaVariable", serif;
+    font-size: 50px;
+}
+
+.about-text p span {
+    color: #8b8b8b;
+}
+
+/****************************** CABIN SECTION ******************************/
+@keyframes hoverAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cabin {
+    background: #f9f9f9;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+#cabin-head {
+    color: var(--dark-green);
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 220px;
+    margin-top: 50px;
+}
+
+.cabin-img {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 28% 40% 28%;
+    gap: 3.5%;
+    align-items: start;
+    position: relative;
+}
+
+.cabin-class {
+    position: relative;
+    transition: transform 0.8s ease-in-out, height 0.8s ease-in-out;
+}
+
+.cabin-class-middle {
+    position: relative;
+    height: 55rem;
+    top: -5rem;
+    margin-bottom: -5rem;
+    z-index: 1;
+    transition: transform 0.8s ease-in-out, height 0.8s ease-in-out;
+}
+
+.cabin-text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+}
+
+.cabin-text h3 {
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+#cabin-grid p {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.cabin-text .icon img {
+    height: auto;
+    width: 50%;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.cabin-class img {
+    position: relative;
+    height: 45rem;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.cabin-class-middle img {
+    height: 55rem;
+}
+
+.cabin-class:hover {
+    cursor: pointer;
+    height: 43rem;
+    transform: scale(1.1);
+    animation: hoverAnimation 1s;
+    -webkit-animation: hoverAnimation 1s;
+}
+
+.cabin-class-middle:hover {
+    height: 55rem;
+    transform: scale(1.1);
+    animation: hoverAnimation 1s;
+}
+
+.cabin-class .cabin-text p {
+    opacity: 0;
+    transition: opacity 0.8s linear;
+}
+
+.cabin-class:hover .cabin-text p {
+    opacity: 1;
+    transition: opacity 0.8s linear;
+    font-family: "Switzer", sans-serif;
+    font-weight: 300;
+    color: #dedede;
+}
+
+.cabin-class:hover .cabin-text h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    transition: font-size 0.8s linear;
+}
+
+.cabin-class:hover .icon img {
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+/* polish images center */
+.card:nth-child(1) img {
+    left: 0;
+}
+
+.card:nth-child(2) img {
+    left: 0;
+}
+
+.card:nth-child(3) img {
+    left: 0;
+}
+
+#cta {
+    padding: 150px 100px;
+}
+
+.cta-box {
+    background: url(../images/BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15% 10%;
+    color: #fff;
+    align-content: center;
+}
+
+.cta-text {
+    width: 51%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cta h1 {
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#cta span {
+    color: var(--light-green);
+}
+
+#cta p {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 5% 0;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-top: 5%;
+}
+
+.cta-form input {
+    padding: 5% 10%;
+    font-family: "Switzer", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark-green);
+    text-transform: capitalize;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.cta-form input::placeholder {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #bbbbbb;
+    text-transform: capitalize;
+}
+
+.cta-form button {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    font-family: "Switzer", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    transition: all linear 0.3s;
+}
+
+.cta-form button:hover {
+    background: var(--dark-green);
+    color: #75ff69;
+    transition: all linear 0.3s;
+}
+
+/************************** TESTIMONIAL SLIDER SECTION ******************************/
+#slider {
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+.slider-top {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 100px 0;
+    color: var(--dark-green);
+}
+
+.slider-top h1 {
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 4.7rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.slider-top .slider-para h2 {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.slider-para {
+    place-self: end;
+}
+
+.responsive {
+    margin: 100px 0 100px 0;
+    position: relative;
+}
+.responsive .slides {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.responsive .slides img {
+    width: 70%;
+}
+
+.slide-text {
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+    );
+    pointer-events: none;
+}
+
+.blurry-text {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.slide-text h5 {
+    font-size: 25px;
+}
+.slide-text h4 {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #1b3936;
+    margin-bottom: 5px;
+}
+.slide-text h6 {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #1b3936;
+    line-height: 130%;
+}
+
+.slick-prev {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--dark-green);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    bottom: -35%;
+    left: 48%;
+    transition: all linear 0.2s;
+}
+.slick-prev:hover {
+    background: var(--light-green);
+    color: var(--dark-green);
+    transition: all linear 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.slick-next {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--dark-green);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all linear 0.2s;
+    position: absolute;
+    bottom: -35%;
+    left: 52%;
+}
+.slick-next:hover {
+    background: var(--light-green);
+    color: var(--dark-green);
+    transition: all linear 0.2s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/************************** LET'S TALK SECTION ******************************/
+
+#contact {
+    background: #ffffff;
+}
+
+#contact .contact-text {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 150px 0;
+    width: 70%;
+}
+
+.c-img {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#contact img {
+    width: 50%;
+}
+
+.c-text {
+    color: var(--dark-green);
+}
+
+.c-text h1 {
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.c-text p {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.c-text button {
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--dark-green);
+    border-radius: 50%;
+    padding: 20px 40px;
+    margin: 50px 0;
+    transition: all linear 0.3s;
+}
+
+.c-text button:hover {
+    background-color: var(--dark-green);
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+/************************** FOOTER SECTION ******************************/
+
+#footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    color: #ffffff;
+}
+
+#footer .box:hover {
+    background: var(--light-green);
+    color: var(--dark-green);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+#footer .box:first-child {
+    background: var(--light-green);
+}
+#footer .box {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+    padding: 100px 100px;
+    position: relative;
+    transition: all linear 0.3s;
+}
+
+.box-text {
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer svg {
+    transform: rotate(45deg);
+}
+
+#footer h1 {
+    font-family: "BoskaVariable", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    order: 2;
+    transition: all linear 0.3s;
+}
+
+#footer p {
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    order: 1;
+    transition: all linear 0.3s;
+}
+
+#footer .box:hover .box-text h1 {
+    order: 1;
+    transition: all linear 0.6s;
+}
+#footer .box:hover .box-text p {
+    order: 2;
+    transition: all linear 0.6s;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: end;
+    transition: all linear 0.7s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box:hover .icon-box {
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transition: all linear 0.7s;
+}
+#footer svg {
+    transform: rotate(45deg);
+    transition: all linear 0.7s;
+}
+.box svg path {
+    stroke: #678784;
+    transition: all linear 0.7s;
+}
+
+.box:hover svg path {
+    stroke: var(--dark-green);
+    transition: all linear 0.7s;
+}
+
+/************************** FOOTER LINKS ******************************/
+.links {
+    background: #ffffff;
+}
+
+.links div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+
+.links a {
+    color: var(--dark-green);
+    font-family: "Switzer", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}

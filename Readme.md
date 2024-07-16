@@ -1,12 +1,11 @@
 # Live Site
 
-## Homepage - https://staticmania-homepage-aansourav.netlify.app
+## Homepage - https://grindelwald-aansourav.netlify.app
 
-## Dashboard - https://staticmania-dashboard-aansourav.netlify.app
+## Dashboard - https://dashboard-aansourav.netlify.app
 
 ### Description
 
-This is a task for Jr. Front-End Developer position at StaticMania.
 I've made two static web pages **_Homepage_** and **_Dashboard_**.
 
 <br/>
